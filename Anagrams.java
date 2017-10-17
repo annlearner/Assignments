@@ -13,13 +13,17 @@ public class Anagrams {
 		//string to arrayList
 		if(S1 == null ||S2 == null )
 			return false;
+		// What's the intention of .split(",")? 
+		// Test case "fin,ish", "ini,shf" will return false
 		String[] S11 = S1.toLowerCase().split(",");
 		String[] S22 = S2.toLowerCase().split(",");
 		if(S11.length ==S22.length){
 		   Arrays.sort(S11);
+		   // I think this will print the address of S11 not the String value
 		   System.out.print(S11);
 		   Arrays.sort(S22);
 		   System.out.print(S22);
+		   // Same here, res1 will store the address of S11
 		   String res1 = String.valueOf(S11);
 	        String res2 = String.valueOf(S22);
 		        if(res1.equals(res2)){
