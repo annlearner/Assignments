@@ -2,9 +2,9 @@ package com.java1995;
 
 import java.util.ArrayList;
 
-/*×Ö·û£¬×Ö·û´®,array,Arraylist,Ö®¼äµÄ×ª»¯,
+/*å­—ç¬¦ï¼Œå­—ç¬¦ä¸²,array,Arraylist,ä¹‹é—´çš„è½¬åŒ–,
  * char[] star = input.toCharArray();
-    ArraylistµÄÊ¹ÓÃ*/
+    Arraylistçš„ä½¿ç”¨*/
 public class RemoveVowels {
 	static String input = "finish";
 	static String res;
@@ -13,11 +13,12 @@ public class RemoveVowels {
 	}
 	
 	public static void removeVowelsFromString(String input){
-		//½«input×ª»¯ÎªÊı×é(char/string)
+		//å°†inputè½¬åŒ–ä¸ºæ•°ç»„(char/string)
 		char[] star = input.toCharArray();
 		ArrayList<Character> bin = new ArrayList<Character>(); 
-		//½øĞĞ±éÀú
+		//è¿›è¡Œéå†
 		for(char p:star){
+			// Consider upper case vowel AEIOU
 			if(p != 'a' && p != 'e' && p != 'i' && p != 'o' && p !='u')
 				bin.add(p);
 			res = bin.toString();
