@@ -3,7 +3,7 @@ package com.java1995;
 import java.awt.List;
 import java.util.ArrayList;
 import java.util.Scanner;
-//scanÊäÈëÀàĞÍ×Ü½á
+//scanè¾“å…¥ç±»å‹æ€»ç»“
 public class Caculator {
 	static double res;
 	static String operator1;
@@ -17,14 +17,14 @@ public class Caculator {
 			 String[] eqa = {"3","x","^","+","-4","x","+","5"};
 		double x = scan.nextDouble();
 		res = x;
-		//scanner½ÓÊÕÔËËã·û
+		//scanneræ¥æ”¶è¿ç®—ç¬¦
 		 operator1 = scan.next();
 		double y = scan.nextDouble();
 		operator2 = scan.next();
 		System.out.println("The answer is: " + Caculator(x,y));
 		quadraticEquation(eqa);
 	}}
-	   
+	        // For method, the first character should be lowercase
 		public static double Caculator(double res,double y){
 		while( operator2.equals("=")){
 		switch(operator1){
@@ -58,16 +58,18 @@ public class Caculator {
 		case"PutInchGetFeet":
 			res = res/12;
 			break;
+		// Better to have a default case to catch invalid operator
 		}
 		break;
 		}
 		return res;
 		
 		}
+	        // You have to return the solutions for ax^2 + bx + c
 		public static void quadraticEquation(String eqa[]){
-			//½«res×ª»¯ÎªÊı×é(char/string)
+			//å°†resè½¬åŒ–ä¸ºæ•°ç»„(char/string)
 			ArrayList<String> bin = new ArrayList<String>(); 
-			//½øĞĞ±éÀú
+			//è¿›è¡Œéå†
 			for(String p:eqa){
 				if(p != "x" && p != "^" && p != "+" && p != "-"){
 					bin.add(p);
