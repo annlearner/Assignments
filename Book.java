@@ -4,6 +4,7 @@ public class Book {
 	
 	int size;
 	int price;
+	// Why?
 	//String name should be initialized first.
 	String name;
 	/**
