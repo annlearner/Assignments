@@ -72,4 +72,4 @@ class Cell{
       return (x >= 0 && x < m && y >= 0 && y < n && maze[x][y] == 1);
       	    }
 
-        	  }
+        	  } 
