@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class HangmanGame {
      static String[] list = {"aaa","star","begin","eeeeeend"};
-	 static int random = (int) (Math.random ()*4);//ÔÚ·¶Î§ÄÚËæ»úÈ¡Êı
+	 static int random = (int) (Math.random ()*4);//åœ¨èŒƒå›´å†…éšæœºå–æ•°
 	 static String choice = list[random];
 	 static String temp = "";
 	 static int num = choice.length();
@@ -17,22 +17,23 @@ public class HangmanGame {
 	 static StringBuilder dashes = new StringBuilder();
 
      public static void main(String args[]){
-    	 //´òÓ¡ÆÆÕÛºÅ
+    	 //æ‰“å°ç ´æŠ˜å·
     	 for(int i = 0; i<=num-1;i++){
     		 dashes.append("-"); 
     		 temp = dashes.toString();
     	 }
          System.out.println(temp);
-       //°Ñ×ö³ÉÒ»¸öÊı×é£¬²ÂÖĞÒ»¸öÔÚÏÂ´ÎµÄËÑÑ°Êı×éÖĞ¾Í¼õÉÙÒ»¸ö£¬·ÀÖ¹ÖØ¸´³öÏÖ
+       //æŠŠåšæˆä¸€ä¸ªæ•°ç»„ï¼ŒçŒœä¸­ä¸€ä¸ªåœ¨ä¸‹æ¬¡çš„æœå¯»æ•°ç»„ä¸­å°±å‡å°‘ä¸€ä¸ªï¼Œé˜²æ­¢é‡å¤å‡ºç°
   	   for(int i = 0; i<num;i++){
   	   cho.add(choice.toCharArray()[i]); 
   	   }
-         //ÊäÈë²Â²â×ÖÄ¸
+         //è¾“å…¥çŒœæµ‹å­—æ¯
+	 // How your code handle the invalid input like 12si or ~!j9, maybe you should give some feedback to users
          while(incorrect<8){ 
          System.out.print("please guess the letter: ");
     	 Scanner scan = new Scanner(System.in);
     	 String input = scan.next();
-    	//Êä³ö½á¹û,Ğ¡ĞÄnotMatchµÄÀÛ¼Ó´íÎó
+    	//è¾“å‡ºç»“æœ,å°å¿ƒnotMatchçš„ç´¯åŠ é”™è¯¯
     	 notMatch = 0;
     	 guess(input);
     	 if(guess == num)
