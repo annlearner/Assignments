@@ -8,7 +8,7 @@ public class FindMedian {
 	}
 
 	public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        //Á©¼ÓÒ»¿é
+        //ÃÂ©Â¼Ã“Ã’Â»Â¿Ã©
             int m = nums1.length;
             int n = nums2.length;
             int both = m + n;
@@ -44,5 +44,5 @@ public class FindMedian {
         }
         }
     }
-
+ 
 
