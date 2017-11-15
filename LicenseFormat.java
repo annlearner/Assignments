@@ -3,6 +3,7 @@ package com.java1995;
 public class LicenseFormat {
 	public static void main(String args[]){
 		int k = 4;
+		// Should contain '-'
 		String s = "1rwtafgh54";
 		licenseFormat(s,k);
 		}
