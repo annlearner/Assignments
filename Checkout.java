@@ -56,4 +56,4 @@ public class Checkout{
 	      String checkOut = sb.toString();
 	      return checkOut;
 }
-}	
+} 	
