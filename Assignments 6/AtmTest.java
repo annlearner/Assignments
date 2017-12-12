@@ -39,4 +39,4 @@ public class AtmTest {
 		String Output4 = String.valueOf(atm.base);
 		Assert.assertEquals(eo10, Output4);
 	}
-}
+} 
